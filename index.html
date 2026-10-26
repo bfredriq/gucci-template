@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gucci | Website Template</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <a href="#top" class="logo" aria-label="Home">GUCCI</a>
+    <div class="tools">
+      <a href="#newsletter" class="hide-sm">Join</a>
+      <button class="cart" id="cartBtn" aria-live="polite">Bag (0)</button>
+    </div>
+    <nav id="nav" aria-label="Main">
+      <ul>
+        <li><a href="#collection">Shop</a></li>
+        <li><a href="#heritage">Heritage</a></li>
+        <li><a href="#stories">Stories</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="panel p1">
+      <h1>The new season, in three colors</h1>
+      <p>Handcrafted leather, rich silk and bold tailoring for the autumn collection.</p>
+      <div><a href="#collection" class="btn">Shop the collection</a></div>
+    </div>
+    <div class="panel p2">
+      <div class="shape bag" aria-hidden="true"></div>
+      <p class="tag"><small>Bags and small leather goods</small></p>
+    </div>
+    <div class="panel p3">
+      <div class="shape shoe" aria-hidden="true"></div>
+      <p class="tag"><small>Footwear and accessories</small></p>
+    </div>
+  </div>
+  <div class="stripe" aria-hidden="true"></div>
+
+  <section id="collection">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <h2>Autumn collection</h2>
+          <p>Pieces made in Italian workshops, ready to wear every day.</p>
+        </div>
+      </div>
+      <div class="filters" role="group" aria-label="Filter products">
+        <button class="chip" data-f="all" aria-pressed="true">All</button>
+        <button class="chip" data-f="bags" aria-pressed="false">Bags</button>
+        <button class="chip" data-f="shoes" aria-pressed="false">Shoes</button>
+        <button class="chip" data-f="scarves" aria-pressed="false">Scarves</button>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section class="story" id="heritage">
+    <div class="wrap cols">
+      <div>
+        <h2>A century of Italian craft</h2>
+        <p>Every piece starts in a Florentine workshop, where artisans cut, stitch and finish by hand. This is placeholder text: replace it with your own brand story, one short paragraph that tells visitors who you are.</p>
+        <div class="stats">
+          <div><b>1921</b><span>Founded in Kikoni</span></div>
+          <div><b>100%</b><span>Italian leather</span></div>
+          <div><b>45</b><span>Steps per bag</span></div>
+        </div>
+      </div>
+      <div class="art"><q>Quality is remembered long after the price is forgotten.</q></div>
+    </div>
+  </section>
+
+  <div class="stripe" aria-hidden="true"></div>
+
+  <section id="stories" style="padding:0">
+    <div class="split">
+      <div class="half" style="background:var(--black)">
+        <h2>Evening, redefined</h2>
+        <p>Silk, velvet and sharp black tailoring for after dark.</p>
+        <a href="#collection" class="btn ghost">Explore evening</a>
+      </div>
+      <div class="half red">
+        <h2>The burgundy edit</h2>
+        <p>One color, worn head to toe. Our most requested palette this season.</p>
+        <a href="#collection" class="btn ghost">View the edit</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="news" id="newsletter">
+    <div class="wrap">
+      <h2>Join the list</h2>
+      <p>Get first access to new collections and private events.</p>
+      <form id="form" novalidate>
+        <label for="email" style="position:absolute;left:-9999px">Email address</label>
+        <input id="email" type="email" placeholder="Your email address" autocomplete="email" required>
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+      <div class="note" id="note" role="status"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="logo" style="padding:0;font-size:1.6rem">GUCCI</div>
+        <p style="color:#dcc4ca;font-size:.9rem;max-width:30ch">Quality matters</p>
+      </div>
+      <div><h4>Shop</h4><ul><li><a href="#collection">Bags</a></li><li><a href="#collection">Shoes</a></li><li><a href="#collection">Scarves</a></li></ul></div>
+      <div><h4>Help</h4><ul><li><a href="#top">Contact us</a></li><li><a href="#top">Shipping</a></li><li><a href="#top">Returns</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="#heritage">Heritage</a></li><li><a href="#top">Careers</a></li><li><a href="#top">Stores</a></li></ul></div>
+    </div>
+    <div class="legal">© 2026 Template demo by fredrick M</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
